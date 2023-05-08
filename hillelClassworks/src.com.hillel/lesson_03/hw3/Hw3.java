@@ -14,6 +14,10 @@ public class Hw3 {
 
     }
 
+    public void powN(int a, int n){
+
+    }
+
 
 }
 

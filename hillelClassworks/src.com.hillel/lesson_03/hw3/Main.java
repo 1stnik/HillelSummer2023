@@ -10,5 +10,7 @@ public class Main {
         System.out.println("task 2");
         hw.forPrintFrom1to99();
 
+        System.out.println("task 4");
+        hw.powN(2, 2);
     }
 }

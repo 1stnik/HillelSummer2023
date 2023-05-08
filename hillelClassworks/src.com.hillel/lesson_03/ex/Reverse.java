@@ -1,6 +1,5 @@
 package lesson_03.ex;
 
-import lesson_02.Str;
 
 // reverse number 111112344 - 443211111
 public class Reverse {
