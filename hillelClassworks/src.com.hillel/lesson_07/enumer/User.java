@@ -3,6 +3,7 @@ package lesson_07.enumer;
 public class User {
     private String email;
     private UserStatus status;
+    private boolean isActive;
 
     public User(String email) {
         this.email = email;
@@ -11,6 +12,14 @@ public class User {
 
     public String getEmail() {
         return email;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
+    }
+
+    public boolean isActive() {
+        return isActive;
     }
 
     public void setEmail(String email) {
@@ -27,9 +36,10 @@ public class User {
 
     @Override
     public String toString() {
-        return "UserL{" +
+        return "User{" +
                 "email='" + email + '\'' +
                 ", status=" + status +
+                ", isActive=" + isActive +
                 '}';
     }
 }

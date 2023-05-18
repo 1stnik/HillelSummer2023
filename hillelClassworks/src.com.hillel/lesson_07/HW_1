@@ -4,14 +4,14 @@ String[] strArray = new String[10];
 [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]
 
 
-1. boolean add(int index, String value); 1 -> 0 1a 1 2 (4)
+1. boolean add(int index, String value); 1 -> 0 1a 1 2 (4) -> true / false
 2. boolean add(String value); 0 1 2 (3)
-3. boolean delete(int index); 0 -> 1a 1 2
+3. boolean delete(int index); 12
 4. boolean delete(String value);
 5. String get(int index);
 
 10 add 11 ->  0  1  2  3  4  5  6  7  8  9  10  11
-             [ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][  ][  ]
+             [x][x][x][ ][ ][ ][ ][ ][ ][ ][  ][  ]
 
  strArray[0]
  strArray[1]
@@ -19,8 +19,8 @@ String[] strArray = new String[10];
 
  CustomCollection{
 
- String[] strArray;
- int count;
+ private String[] strArray;
+ private int count;
 
  CustomCollection(int value){
     this.strArray = new String[value];

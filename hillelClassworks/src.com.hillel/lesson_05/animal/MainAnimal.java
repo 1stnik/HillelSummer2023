@@ -13,6 +13,8 @@ public class MainAnimal {
         cat.setAge("4");
         cat.setName("Barsik");
 
+
+
 //        System.out.println(cat.toString());
 //        System.out.println(cat.getClass().getName());
 //        System.out.println(cat.getClass().getSuperclass().getName());
