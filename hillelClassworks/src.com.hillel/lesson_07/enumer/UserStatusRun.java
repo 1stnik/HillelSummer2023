@@ -13,6 +13,7 @@ public class UserStatusRun {
         System.out.println(u.isActive());
 
         u.setActive(isActive(u));
+        System.out.println(isActive(u));
 
         setActiveStatus(u);
 
@@ -23,6 +24,7 @@ public class UserStatusRun {
         if (user.getStatus().equals(UserStatus.ACTIVE)) {
             user.setActive(true);
         }
+        System.out.println(user.isActive());
     }
 
     public static boolean isActive(User user) {
