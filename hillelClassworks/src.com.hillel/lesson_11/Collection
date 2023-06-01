@@ -1,0 +1,20 @@
+interface Collection:
+
+boolean add(String o);
+1. null ->
+    - add -> true
+    - size() -> = 1
+    - get(0) -> null
+2. "string" ->
+3. int ->
+boolean add(int index, String o);
+4. null ->
+5. "string" ->
+6. int ->
+boolean delete (String o);
+
+String get(int index);
+boolean contain(String o);
+boolean equals (Collection str),
+boolean clear(),
+int size(), - количество элементов которые добавили
