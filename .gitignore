@@ -24,3 +24,5 @@ hs_err_pid*
 replay_pid*
 /.idea/
 /mvn/FirstMavenProject/.idea/
+/mvn/UnitTest/.idea/
+/mvn/FirstMavenProject/.idea/
