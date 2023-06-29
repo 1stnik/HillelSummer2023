@@ -36,12 +36,14 @@ class GameServiceTest {
     @RepeatedTest(10)
     void computerHandTest(){
         CardDeck cd = new CardDeck();
-        Stack<Card> deck = cd.getDeck();
+        Stack<Card> deck = cd.createDeck();
 
         GameService gs = new GameService();
         List<Card> cards = gs.computerHand(deck);
 
-        assertTrue(cards.size() > 0 && cards.size() <= 5);
+        System.out.println(cards.size());
+
+        assertTrue(cards.size() > 1 && cards.size() <= 5);
         assertEquals(52 - cards.size(), deck.size());
 
     }

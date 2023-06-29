@@ -9,10 +9,12 @@ import java.util.Stack;
 
 public class GameService {
 
+    // calculate hand score
     public Integer calculateHandScore(List<Card> hand) {
         return hand.stream().mapToInt(Card::getCost).sum();
     }
 
+    // print hand
     public void printHand(List<Card> hand) {
         hand.forEach(System.out::print);
     }
@@ -21,8 +23,10 @@ public class GameService {
         return new Random().nextInt(25 - 17) + 17; // 17 - 25
     }
 
+
+    // method return computer hand get random card from stack in range from 2 to 5
     public List<Card> computerHand(Stack<Card> cardDeck){
-        Integer numberOfCards = new Random().nextInt(5) + 1;
+        Integer numberOfCards = new Random().nextInt(4) + 2;
         List<Card> computerHand = new ArrayList<>();
         for (int i = 0; i < numberOfCards; i++){
             computerHand.add(cardDeck.pop());
@@ -30,7 +34,7 @@ public class GameService {
         return  computerHand;
     }
 
-
+    // calculate winner
     public GameResult calculateResult(Integer playerScore, Integer computerScore) {
         if (playerScore > 21 && computerScore > 21) {
             return GameResult.LOSE;
@@ -46,6 +50,4 @@ public class GameService {
             return GameResult.DRAW;
         }
     }
-
-
 }

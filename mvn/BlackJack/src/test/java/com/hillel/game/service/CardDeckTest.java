@@ -12,7 +12,7 @@ class CardDeckTest {
     @Test
     void getDeckTest(){
         CardDeck cardDeck = new CardDeck();
-        Stack<Card> deck = cardDeck.getDeck();
+        Stack<Card> deck = cardDeck.createDeck();
         assertEquals(52, deck.size());
         deck.pop();
         assertEquals(51, deck.size());
@@ -21,7 +21,7 @@ class CardDeckTest {
     @Test
     void getCardTest(){
         CardDeck cardDeck = new CardDeck();
-        cardDeck.getDeck();
+        cardDeck.createDeck();
         Card card = cardDeck.getCard();
         assertNotNull(card);
     }

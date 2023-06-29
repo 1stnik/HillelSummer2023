@@ -47,7 +47,8 @@
                     <configuration>
                         <archive>
                             <manifest>
-                                <mainClass>com.hillel.Main</mainClass>
+                                <!-- need put your main class -->
+                                <mainClass>com.hillel.game.Main</mainClass>
                             </manifest>
                         </archive>
                     </configuration>

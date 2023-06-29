@@ -10,9 +10,9 @@ import java.util.Stack;
 
 public class CardDeck {
 
-    Stack<Card> deck = new Stack<>();
+    private Stack<Card> deck = new Stack<>();
 
-    public Stack<Card> getDeck(){
+    public Stack<Card> createDeck(){
         for(Suit suit : Suit.values()){
             for (Rank rank : Rank.values()){
                 deck.add(new Card(rank, suit));
@@ -28,4 +28,7 @@ public class CardDeck {
         return deck.pop();
     }
 
+    public Stack<Card> getDeck() {
+        return deck;
+    }
 }
