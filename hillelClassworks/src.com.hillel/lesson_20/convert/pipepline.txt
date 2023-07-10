@@ -1,0 +1,13 @@
+1- read from file to object
+    {
+    // common data
+    // list{Event}
+    }
+
+2 - list.event -> stream.map(event -> {
+    NEW OBJECT OUT
+    // COMMON DATA
+    //CXP_TIKET << event
+    //PROVIDER_TYPE << event
+    //DOC_DATE << event
+ }).toList();

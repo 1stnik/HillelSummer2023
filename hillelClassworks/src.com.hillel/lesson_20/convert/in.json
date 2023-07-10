@@ -1,0 +1,28 @@
+[{
+  "ID_TEMPLATE": "100000052",
+  "L_DAP_EDITOR": "DN1111JAN1",
+  "STATE": "A",
+  "DOC_NUM": "111111",
+  "DOC_YEAR": "2022",
+  "DELETE_FLAG": "F",
+  "CREATE_DATE": "2023-06-28 16:40:01.028774",
+  "BMO_STATE": "A",
+  "ORDER_NUMBER": "",
+  "EDIT_DATE": "2023-06-28 16:40:01.028774",
+  "DOC_URL": "HTTPS://",
+  "ID_BMO": "284",
+  "TYPE_OF_OPERATION": "АГЕНТСЬКА",
+  "BMO_NAME": "ТЕСТОВА МОДЕЛЬ2",
+
+  "EVENT": [{
+    "CXP_TIKET": "000000123456",
+    "PROVIDER_TYPE": "ДТ",
+    "DOC_DATE": "2023-06-29"
+  },
+    {
+      "CXP_TIKET": "000000123456",
+      "PROVIDER_TYPE": "ДТ",
+      "DOC_DATE": "2023-06-29"
+    }
+  ]
+}]
