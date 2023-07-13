@@ -1,5 +1,7 @@
 package lesson_20.logger;
 
+import java.io.File;
+
 public class FileLogger {
 
     private FileLoggerConfiguration config;
