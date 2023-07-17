@@ -1,0 +1,43 @@
+CREATE TABLE homework (
+    id int auto_increment primary key,
+    name varchar(128),
+    description varchar(1024)
+);
+
+CREATE TABLE lesson (
+    id int auto_increment primary key,
+    name varchar(128),
+    updatedAt timestamp,
+    homework_id int;
+);
+
+
+CREATE TABLE schedule (
+    id int auto_increment primary key,
+    name varchar(128),
+    updatedAt timestamp,
+    lesson_id int;
+);
+
+
+CREATE TABLE lesson_schedule (
+    schedule_id int;
+    lesson_id int;
+);
+
+
+ALTER TABLE lesson ADD
+	CONSTRAINT FK_lesson_schedule FOREIGN KEY
+	(
+		id
+	) REFERENCES schedule (
+		id
+	);
+
+ALTER TABLE schedule ADD
+	CONSTRAINT FK_schedule_lesson FOREIGN KEY
+	(
+		id
+	) REFERENCES lesson (
+		id
+	);

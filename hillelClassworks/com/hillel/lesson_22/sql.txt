@@ -1,0 +1,32 @@
+select
+	p.name,
+	pt.place,
+	pt.`date`,
+	t.trip_no ,
+	t.plane,
+	t.town_from,
+	t.town_to,
+	c.name
+from Pass_in_trip pt
+left join Passenger p on p.ID_psg = pt.ID_psg
+left join Trip t on t.trip_no  = pt.trip_no
+left join Company c on c.ID_comp = t.ID_comp;
+
+select
+	t.trip_no , COUNT(t.trip_no)
+from Pass_in_trip pt
+left join Passenger p on  p.ID_psg = pt.ID_psg
+left join Trip t on t.trip_no  = pt.trip_no
+left join Company c on c.ID_comp = t.ID_comp
+GROUP BY t.trip_no ;
+
+SELECT MAX(t.trip_no) from Trip t ;
+
+
+// join
+select p.name, c.name, t.plane, t.town_from, t.town_to
+from Passenger p
+left join Pass_in_trip pit on p.ID_psg = pit.ID_psg
+left join Trip t on pit.trip_no = t.trip_no
+left join Company c on t.ID_comp = c.ID_comp
+where p.name = 'Bruce Willis';
