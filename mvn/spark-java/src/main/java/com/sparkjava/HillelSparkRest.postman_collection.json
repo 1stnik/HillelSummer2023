@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "1327330d-4671-4e8b-831b-f75541716b6e",
+		"name": "HillelSparkRest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cerateUser",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Sloan\",\n  \"lastName\": \"O'Brallaghan\",\n  \"email\": \"sobrallaghan2@gizmodo.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4567/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get List of users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4567/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4567/users/73d93e27-a87e-482d-acf9-930bae9f364c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"users",
+						"73d93e27-a87e-482d-acf9-930bae9f364c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"73d93e27-a87e-482d-acf9-930bae9f364c\",\n        \"firstName\": \"Oleksandr\",\n        \"lastName\": \"Stepurko\",\n        \"email\": \"step@mail.com\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4567/users/73d93e27-a87e-482d-acf9-930bae9f364c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"users",
+						"73d93e27-a87e-482d-acf9-930bae9f364c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check user availability ",
+			"request": {
+				"method": "OPTIONS",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"73d93e27-a87e-482d-acf9-930bae9f364c\",\n        \"firstName\": \"Oleksandr\",\n        \"lastName\": \"Stepurko\",\n        \"email\": \"step@mail.com\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4567/users/73d93e27-a87e-482d-acf9-930bae9f364c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"users",
+						"73d93e27-a87e-482d-acf9-930bae9f364c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": \"73d93e27-a87e-482d-acf9-930bae9f364c\",\n        \"firstName\": \"Oleksandr\",\n        \"lastName\": \"Stepurko\",\n        \"email\": \"step@mail.com\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4567/users/73d93e27-a87e-482d-acf9-930bae9f364c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4567",
+					"path": [
+						"users",
+						"73d93e27-a87e-482d-acf9-930bae9f364c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
