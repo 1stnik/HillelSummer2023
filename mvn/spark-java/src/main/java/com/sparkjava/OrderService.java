@@ -58,7 +58,6 @@ public class OrderService {
         put("/order/:uuid", (request, response)  -> {
             response.type("application/json");
 
-            response.type("application/json");
             UUID uuid = UUID.fromString(request.params(":uuid"));
 
             Order order = orderList.stream()

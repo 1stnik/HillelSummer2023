@@ -7,3 +7,10 @@ create table student (
      study_group VARCHAR(50),
      country VARCHAR(50)
 );
+
+
+create table homework (
+    id int auto_increment primary key
+    name VARCHAR(50),
+    description VARCHAR(50),
+);
