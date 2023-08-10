@@ -10,10 +10,15 @@ import com.hillel.game.service.MoneyService;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Main {
 
+    private static final Logger logger = LoggerFactory.getLogger("logger");
+
     public static void main(String[] args) {
+        logger.debug("Welcome Black Jack : 2023");
         System.out.println("Welcome Black Jack : 2023");
         Scanner sc = new Scanner(System.in);
 
@@ -21,6 +26,7 @@ public class Main {
 
         System.out.println("Enter your name: ");
         String name = sc.nextLine();
+        logger.debug("User >>>" + name  + " want start game");
         System.out.println("Put money ... ");
         Integer amount = sc.nextInt();
         System.out.println("Enter number of games [more then 0]: ");
