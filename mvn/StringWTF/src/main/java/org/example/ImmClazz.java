@@ -15,7 +15,6 @@ public class ImmClazz {
         return new String(str);
     }
 
-    @Override
     public String toString() {
         return "ImmClazz{" +
                 "id=" + id +
