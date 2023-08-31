@@ -16,6 +16,19 @@ public class TEst {
                 .sorted((o1, o2) -> o2 - o1)
                 .forEach(System.out::println);
 
+        System.out.println("--------");
+        var values = new ArrayList<Integer>();
+        values.add(1);
+        values.add(2);
+        values.add(3);
+        values.add(4);
+        values.add(5);
+
+        for (Integer val : values) {
+            values.remove(val);
+        }
+        System.out.println(values);
+
     }
 
     static void shouldGetValueOnReadiness() throws ExecutionException, InterruptedException {
