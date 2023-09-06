@@ -31,7 +31,6 @@ import java.util.stream.Collectors;
 @Slf4j
 public class StudentController {
 
-    List<Student> students = StudentGenerator.studentList();
     StudentRepository sr = new StudentRepository();
 
     @GetMapping("students") //GET [/api/v1/students]

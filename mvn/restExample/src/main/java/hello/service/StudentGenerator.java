@@ -5,14 +5,16 @@ import hello.dto.Student;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import org.springframework.stereotype.Service;
 
+@Service
 public class StudentGenerator {
 
     /**
      *
      * @return
      */
-    public static List<Student> studentList() {
+    public List<Student> studentList() {
         List<Student> students = new ArrayList<>();
 
         students.add(new Student(UUID.randomUUID(), "Ivan", "Ivanov"));
@@ -29,7 +31,7 @@ public class StudentGenerator {
      * @param lastName - LN
      * @return {@link java.util.ArrayList} of {@link Student}
      */
-    public static Student getStudent(String firstName, String lastName){
+    public  Student getStudent(String firstName, String lastName){
         return new Student(UUID.randomUUID(), firstName, lastName);
     }
 }

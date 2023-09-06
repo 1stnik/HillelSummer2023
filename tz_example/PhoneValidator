@@ -11,11 +11,15 @@ Current behaviour
 Phone number may contain plus sign in the beginning, spaces, braces (if there is opening brace there should be closing),
 dashes, eg:
 
+// international format 11 digits
+0. normalise number: remove all unesessary characters
+1. number < 11 or number > 11 - incorrect number
 37061234567
 +37061234567
 +370(6)1234567 +370(6)1234567
 +370 612 34 567
 +370-612-34-567
+
 Currently supported counties:
 
 Lithuania (LT ISO country code) (370)

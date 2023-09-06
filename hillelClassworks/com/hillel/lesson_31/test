@@ -1,0 +1,27 @@
+
+
+u,9,1,bid -
+u,11,5,ask
+q,best_bid 9
+u,10,2,bid
+q,best_bid 10
+o,sell,1
+q,size,10
+u,9,0,bid
+u,11,0,ask
+
+
+9,1 - мин цена покупки
+10,2 - мин цена продажи
+1
+
+Updates to the limit order book in the following format:
+u,<price>,<size>,bid - set bid size at <price> to <size>
+u,<price>,<size>,ask - set ask size at <price> to <size>
+Queries in the following format:
+q,best_bid - print best bid price and size
+q,best_ask - print best ask price and size
+q,size,<price> - print size at specified price (bid, ask or spread).
+And market orders in the following format:
+o,buy,<size> - removes <size> shares out of asks, most cheap ones.
+o,sell,<size> - removes <size> shares out of bids, most expensive ones
