@@ -8,11 +8,11 @@
 		<version>3.1.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.telegrambot.example</groupId>
-	<artifactId>telegrambot</artifactId>
+	<groupId>com.test</groupId>
+	<artifactId>TelegramBot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TelegramBOt</name>
-	<description>Spring boot telegram bot application</description>
+	<name>SpringBootTemplate</name>
+	<description>Spring boot template application</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -20,6 +20,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springdoc</groupId>
@@ -35,15 +40,23 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots-meta</artifactId>
+            <version>6.5.0</version>
+            <scope>compile</scope>
+        </dependency>
 		<dependency>
 			<groupId>org.telegram</groupId>
-			<artifactId>telegrambots-spring-boot-starter</artifactId>
+			<artifactId>telegrambots</artifactId>
 			<version>6.5.0</version>
+			<scope>compile</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
-		<finalName>TelegramBot</finalName>
+		<finalName>restServer</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
