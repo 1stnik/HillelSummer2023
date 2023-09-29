@@ -10,10 +10,9 @@
             </column>
             <column name="user_name" type="VARCHAR(200)"/>
             <column name="cost" type="DECIMAL"/>
-            <column name="order_state" type="VARCHAR(15)"/>
             <column name="products" type="VARCHAR(1000)"/>
-            <column name="create_at" type="TIMESTAMP"/>
-            <column name="update_at" type="TIMESTAMP"/>
+<!--            <column name="create_at" type="TIMESTAMP"/>-->
+<!--            <column name="update_at" type="TIMESTAMP"/>-->
         </createTable>
     </changeSet>
 

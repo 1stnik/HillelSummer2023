@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="179dc637-7c35-4e3e-ae42-ce1a7cbeb6cd" name="Changes" comment="fix tests">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/city/list/exceptions/ServiceError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/city/list/exceptions/ServiceError.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="remove .idea from git" />
+        <option name="rewordedMessage" value="fix tests&#10;&#10;&#10;fix tests&#10;&#10;&#10;update local config file&#10;&#10;&#10;remove .idea from git" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="b92e4b6e99e4f0fd30c0a0efb0d741952cbd5d8d" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2NvJo7DxbuEF0A1HaHtlAXFMkq7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/oleksandrstepurko/IdeaProjects/SpringCloud/cityList/src/test/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "sshConsole",
+    "spring.configuration.checksum": "619de3f52f1d45e7fa344e33588dc294",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="HttpClient.HttpRequestRunConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CityListApplication">
+    <configuration name="All in cityList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cityList" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ITCityApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cityList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.city.list.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.city.list.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.city.list.integration.ITCityApi" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ITCityService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cityList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.city.list.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.city.list.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.city.list.integration.ITCityService" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ITCityService.IT_returnCities" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cityList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.city.list.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.city.list.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.city.list.integration.ITCityService" />
+      <option name="METHOD_NAME" value="IT_returnCities" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ITCityService.IT_updateCitiesNullName_validationException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cityList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.city.list.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.city.list.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.city.list.integration.ITCityService" />
+      <option name="METHOD_NAME" value="IT_updateCitiesNullName_validationException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CityListApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <envs>
+        <env name="DATABASE_PASSWORD" value="rootroot" />
+        <env name="DATABASE_URL" value="jdbc:mysql://localhost:3306/city?useUnicode=true&amp;serverTimezone=UTC&amp;useSSL=false&amp;allowPublicKeyRetrieval=true" />
+        <env name="DATABASE_USERNAME" value="root" />
+      </envs>
+      <module name="knTest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.city.list.CityListApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ITCityService" />
+      <item itemvalue="JUnit.ITCityService.IT_returnCities" />
+      <item itemvalue="JUnit.ITCityService.IT_updateCitiesNullName_validationException" />
+      <item itemvalue="JUnit.All in cityList" />
+      <item itemvalue="JUnit.ITCityApi" />
+      <item itemvalue="Spring Boot.CityListApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in cityList" />
+        <item itemvalue="JUnit.ITCityApi" />
+        <item itemvalue="JUnit.ITCityService" />
+        <item itemvalue="JUnit.ITCityService.IT_returnCities" />
+        <item itemvalue="JUnit.ITCityService.IT_updateCitiesNullName_validationException" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="179dc637-7c35-4e3e-ae42-ce1a7cbeb6cd" name="Changes" comment="" />
+      <created>1680538793837</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680538793837</updated>
+      <workItem from="1680538795270" duration="6054000" />
+      <workItem from="1680598969997" duration="12911000" />
+      <workItem from="1680678005065" duration="5048000" />
+      <workItem from="1680684074095" duration="582000" />
+      <workItem from="1680853621520" duration="752000" />
+      <workItem from="1681110045080" duration="223000" />
+      <workItem from="1681110469536" duration="25000" />
+      <workItem from="1690274398533" duration="1889000" />
+    </task>
+    <task id="LOCAL-00001" summary="City list application">
+      <created>1680544207197</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680544207197</updated>
+    </task>
+    <task id="LOCAL-00002" summary="City list application">
+      <created>1680630830805</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680630830805</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove .idea from git">
+      <created>1680631232235</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680631232235</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update local config file">
+      <created>1680631340842</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680631340842</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix tests">
+      <created>1680631817235</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680631817235</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix tests">
+      <created>1680636257761</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680636257761</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="City list application" />
+    <MESSAGE value="remove .idea from git" />
+    <MESSAGE value="update local config file" />
+    <MESSAGE value="fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tests" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../cityTest/src/main/java/com/city/list/exceptions/ControllerExceptionHandler.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../cityTest/src/test/java/com/city/list/integration/ITCityApi.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="ex" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

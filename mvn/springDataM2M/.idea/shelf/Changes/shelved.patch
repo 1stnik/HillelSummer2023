@@ -1,0 +1,64 @@
+Index: .env
+===================================================================
+diff --git a/.env b/.env
+deleted file mode 100644
+--- a/.env	(revision 5709790bfe9c84e656103abf6f9a76d0545aeef1)
++++ /dev/null	(revision 5709790bfe9c84e656103abf6f9a76d0545aeef1)
+@@ -1,2 +0,0 @@
+-MYSQL_USERNAME=root
+-MYSQL_ROOT_PASSWORD=rootroot
+\ No newline at end of file
+Index: src/test/resources/application-test.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/src/test/resources/application-test.yaml b/src/test/resources/application-test.properties
+rename from src/test/resources/application-test.yaml
+rename to src/test/resources/application-test.properties
+--- a/src/test/resources/application-test.yaml	(revision 5709790bfe9c84e656103abf6f9a76d0545aeef1)
++++ b/src/test/resources/application-test.properties	(date 1680681696689)
+@@ -1,7 +1,4 @@
+-spring:
+-  datasource:
+-    url: ${TEST_DB_URL}
+-    username: ${TEST_DB_USERNAME}
+-    password: ${TEST_DB_PASSWORD}
+-  liquibase:
+-    enabled: false
+\ No newline at end of file
++spring.datasource.url=${TEST_DB_URL}
++spring.datasource.username=${TEST_DB_USERNAME}
++spring.datasource.password=${TEST_DB_PASSWORD}
++spring.liquibase.enabled=false
+\ No newline at end of file
+Index: src/main/resources/application-local.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>server.port=8080\n\nspring.datasource.url=jdbc:mysql://localhost:3306/city?useUnicode=true&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true\nspring.datasource.username=root\nspring.datasource.password=rootroot\nspring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver\nspring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect\n\nspring.liquibase.change-log=classpath:db/changelog/changelog.xml\nspring.liquibase.enabled=true\n\nspringdoc.swagger-ui.path=/swagger-ui.html\n\nspring.banner.location=banner.txt\n\nbcrypt.encoder.level=12
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/src/main/resources/application-local.properties b/src/main/resources/application-local.properties
+--- a/src/main/resources/application-local.properties	(revision 5709790bfe9c84e656103abf6f9a76d0545aeef1)
++++ b/src/main/resources/application-local.properties	(date 1680679408775)
+@@ -1,16 +1,3 @@
+-server.port=8080
+-
+ spring.datasource.url=jdbc:mysql://localhost:3306/city?useUnicode=true&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+ spring.datasource.username=root
+-spring.datasource.password=rootroot
+-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+-
+-spring.liquibase.change-log=classpath:db/changelog/changelog.xml
+-spring.liquibase.enabled=true
+-
+-springdoc.swagger-ui.path=/swagger-ui.html
+-
+-spring.banner.location=banner.txt
+-
+-bcrypt.encoder.level=12
+\ No newline at end of file
++spring.datasource.password=rootroot
+\ No newline at end of file

@@ -1,18 +1,16 @@
 package com.shop.dto;
 
-import lombok.Builder;
-import lombok.Data;
+import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
 @Getter
 @Setter
-@Builder
 @Accessors(chain = true)
-public class ProductDto {
+public class OrderDto {
 
-    private String name;
-    private Double price;
+    private String userName;
+    private List<Long> products;
 
 }

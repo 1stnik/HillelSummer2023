@@ -1,7 +1,7 @@
 package com.shop.entity;
 
 import jakarta.persistence.*;
-import java.time.Instant;
+import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -21,7 +21,12 @@ public class Order {
 
     private Double cost;
 
-    private String products;
+    private String description;
 
+    @ManyToMany
+    @JoinTable(name = "purchase",
+            joinColumns = @JoinColumn(name = "basket_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "product_id", referencedColumnName = "id"))
+    private List<Product> products;
 
 }

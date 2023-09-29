@@ -1,7 +1,7 @@
 package com.shop.entity;
 
 import jakarta.persistence.*;
-import java.time.Instant;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -10,18 +10,14 @@ import lombok.experimental.Accessors;
 @Setter
 @Entity
 @Accessors(chain = true)
-@Table(name = "basket")
-public class Order {
-
+@Table(name = "product")
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private String userName;
-
-    private Double cost;
-
-    private String products;
-
+    @NotNull
+    private String name;
+    @NotNull
+    private Double price;
 
 }
