@@ -1,6 +1,7 @@
 package com.hillel.springsecurity.rest;
 
 import com.hillel.springsecurity.model.Developer;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,12 +32,14 @@ public class DeveloperController {
     }
 
     @PostMapping
+    @ResponseStatus(code = HttpStatus.CREATED)
     public Developer create(@RequestBody Developer developer){
         DEVELOPERS.add(developer);
         return developer;
     }
 
     @DeleteMapping("/{id}")
+    @ResponseStatus(code = HttpStatus.ACCEPTED)
     public void deleteById(@PathVariable Long id){
         DEVELOPERS.removeIf(developer -> developer.getId().equals(id));
     }

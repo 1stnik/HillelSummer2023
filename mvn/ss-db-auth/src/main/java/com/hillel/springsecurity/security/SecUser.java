@@ -63,7 +63,7 @@ public class SecUser implements UserDetails {
 
     public static UserDetails formUser(User user){
         return  new org.springframework.security.core.userdetails.User(
-                user.getEmail(), user.getPassword(),
+                user.getEmail(), user.getPassword(),  // email == login
                 user.getStatus().equals(Status.ACTIVE),
                 user.getStatus().equals(Status.ACTIVE),
                 user.getStatus().equals(Status.ACTIVE),

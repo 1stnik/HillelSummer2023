@@ -24,11 +24,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected UserDetailsService userDetailsService() {
         return new InMemoryUserDetailsManager(
                 User.builder().username("user")
-                        .password(passwordEncoder().encode("user"))
+                        .password("$2a$12$yhjKiO06j.i6zvVRrNErx.dBjDKtlDm4DtX34GgsRsslynZjPp1Dy")
                         .roles("USER")
                         .build(),
                 User.builder().username("admin")
-                        .password(passwordEncoder().encode("admin"))
+                        .password("$2a$12$OmjF.wr3O9h.kiah/ej6b.Rwo3wHrD.mf1tkho02giwT3ioJ25H.K")
                         .roles("ADMIN")
                         .build()
 
