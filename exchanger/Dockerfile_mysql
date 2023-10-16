@@ -1,0 +1,7 @@
+FROM mysql:latest
+MAINTAINER oStepurko
+EXPOSE 3306
+ENV MYSQL_DATABASE=exhangeMarket \
+    MYSQL_ROOT_PASSWORD=rootroot
+
+ADD init.sql /docker-entrypoint-initdb.d

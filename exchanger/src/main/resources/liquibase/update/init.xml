@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog logicalFilePath="db.changelog-1.0.xml" xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="create_user_table" author="hillel" >
+        <createTable tableName="user">
+            <column name = "id" type="INT" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="first_name" type="VARCHAR(255)"/>
+            <column name="last_name" type="VARCHAR(255)"/>
+            <column name="phone" type="VARCHAR(255)"/>
+            <column name="email" type="VARCHAR(255)"/>
+            <column name="date_of_birth" type="DATE"/>
+            <column name="status" type="BOOLEAN"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="hillel_user" id="createTableWallet">
+        <createTable tableName="wallet">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="currency" type="varchar(3)"/>
+            <column name="ammount" type="DECIMAL"/>
+            <column name="last_update" type="TIMESTAMP"/>
+            <column name="user_id" type="INT"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="alter_table" author="hillel">
+        <sql>
+            ALTER TABLE
+                wallet
+                MODIFY COLUMN
+                currency enum ('UAH', 'USD', 'EUR');
+        </sql>
+    </changeSet>
+
+    <changeSet author="hillel_user" id="createTableRate">
+        <createTable tableName="rate">
+            <column name="id" type="INT" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="currency" type="varchar(3)"/>
+            <column name="buy" type="VARCHAR(15)"/>
+            <column name="sale" type="VARCHAR(15)"/>
+            <column name="receive" type="TIMESTAMP"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
