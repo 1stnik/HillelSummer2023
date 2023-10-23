@@ -39,6 +39,6 @@ public class User {
     @Column(name = "status")
     boolean status;
 
-//    @Column(name="telegram_chat_id")
-//    private Long telegramChatId;
+    @Column(name="telegram_chat_id")
+    private Long telegramChatId;
 }

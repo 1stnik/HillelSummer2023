@@ -33,7 +33,7 @@ public class RateServiceImpl implements RateService {
     private final RateRepository rateRepository;
     private final NotificationRepository notificationRepository;
 
-    @Scheduled(cron = "0 * * * * MON-FRI") // means once per minute on weekdays
+    @Scheduled(cron = "0 0 * * * MON-FRI") // means once per minute on weekdays
     /*
     +-------------------- second (0 - 59)
     |  +----------------- minute (0 - 59)

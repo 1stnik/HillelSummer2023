@@ -5,6 +5,6 @@ public enum NotificationTypeEnum {
     EXCHANGE,
     PUT,
     GET,
-    RATE
-
+    RATE,
+    ERROR
 }

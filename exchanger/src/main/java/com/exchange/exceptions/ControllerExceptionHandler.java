@@ -23,5 +23,10 @@ public class ControllerExceptionHandler {
         return new ResponseEntity("You could activate user. Please fill all fields", HttpStatus.BAD_REQUEST);
     }
 
+ @ExceptionHandler(value = {NotEnoughtMoneyException.class})
+    public ResponseEntity<?> handleNotEnoughtMoneyException(Exception ex) {
+        return new ResponseEntity("You could not get money from account", HttpStatus.BAD_REQUEST);
+    }
+
 
 }
